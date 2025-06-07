@@ -1,7 +1,9 @@
-app = "your-app-name"
+app = "your-app-name" # change this to something unique, like bbl-shell
+
+primary_region = "iad"
 
 [build]
-  dockerfile = "Dockerfile"
+  image = "ghcr.io/kelodontplay/fly-shell:latest"
 
 [env]
   PORT = "8080"
@@ -13,3 +15,7 @@ app = "your-app-name"
   [[services.ports]]
     handlers = ["http"]
     port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
