@@ -1,6 +1,7 @@
-app = "keks"
+app = "your-app-name"
 
 [build]
+  dockerfile = "Dockerfile"
 
 [env]
   PORT = "8080"
@@ -12,7 +13,3 @@ app = "keks"
   [[services.ports]]
     handlers = ["http"]
     port = 80
-
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = 443
