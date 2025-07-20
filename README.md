@@ -1,1 +1,1 @@
-# Keks
+sudo mv ~/Downloads/crouton /usr/local/bin/
