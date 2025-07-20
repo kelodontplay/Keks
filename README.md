@@ -1,1 +1,1 @@
-sudo mv ~/Downloads/crouton /usr/local/bin/
+sudo chmod +x ~/Downloads/crouton
